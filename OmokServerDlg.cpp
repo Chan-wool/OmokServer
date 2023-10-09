@@ -739,9 +739,7 @@ void COmokServerDlg::OnLButtonDown(UINT nFlags, CPoint point)
 				{
 					m_bGame[nRow][nCol] = FALSE;
 					m_bStone[nRow][nCol] = FALSE;
-					CWnd::MessageBox("흑은 6목이어도 승리가 아닙니다.", "6목", MB_OK);
-				
-					
+					CWnd::MessageBox("흑은 6목이어도 승리가 아닙니다.", "6목", MB_OK);				
 				}
 
 				if (Yukmok == FALSE && Win == 1)
