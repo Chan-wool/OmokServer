@@ -471,19 +471,15 @@ void COmokServerDlg::OnLButtonDown(UINT nFlags, CPoint point)
 				int cnt44 = 0;
 				int check_44 = 0;
 				//44체크
-
 				for (int i = 0; i < 4; i++)
 				{
 					for (int j = 0; j < 4; j++)
 					{
 						if ((m_bGame[nRow - 3 + i + j][nCol] == 0) || (m_bStone[nRow - 3 + i + j][nCol] == 1))
-
 						{
 							if (m_bStone[nRow - 3 + i + j][nCol] == 1)
 								num44++;
 						}
-
-
 					}
 
 					if (num44 == 3)
@@ -496,18 +492,15 @@ void COmokServerDlg::OnLButtonDown(UINT nFlags, CPoint point)
 
 						num44 = 0;
 				}
-
 				for (int i = 0; i < 4; i++)
 				{
 					for (int j = 0; j < 4; j++)
 					{
 						if ((m_bGame[nRow][nCol - 3 + i + j] == 0) || (m_bStone[nRow][nCol - 3 + i + j] == 1))
-
 						{
 							if (m_bStone[nRow][nCol - 3 + i + j] == 1)
 								num44++;
 						}
-
 					}
 					if (num44 == 3)
 					{
@@ -518,11 +511,7 @@ void COmokServerDlg::OnLButtonDown(UINT nFlags, CPoint point)
 					else
 
 						num44 = 0;
-
 				}
-
-
-
 
 				for (int i = 0; i < 4; i++)
 				{
@@ -554,14 +543,10 @@ void COmokServerDlg::OnLButtonDown(UINT nFlags, CPoint point)
 					for (int j = 0; j < 4; j++)
 					{
 						if ((m_bGame[nRow - 3 + i + j][nCol + 3 - i - j] == 0) || (m_bStone[nRow - 3 + i + j][nCol + 3 - i - j] == 1))
-
-
 						{
 							if (m_bStone[nRow - 3 + i + j][nCol + 3 - i - j] == 1)
 								num44++;
 						}
-
-
 					}
 					if (num44 == 3)
 					{
